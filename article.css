@@ -1,121 +1,243 @@
-body{
+/* =================================================
+   ARTICLE PAGE
+   ================================================= */
 
-background:#0f172a;
+.article {
+    width: 100%;
+    min-height: 100vh;
 
-font-family:'Poppins',sans-serif;
-
-color:#cbd5e1;
-
+    /* IMPORTANT:
+       Keeps article content below fixed navbar */
+    padding-top: 125px;
+    padding-bottom: 80px;
 }
 
 
-
-.about-hero{
-
-padding:70px 0;
-
-text-align:center;
-
+.article .container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 
+/* ===============================
+   ARTICLE HEADER
+   =============================== */
 
-.about-hero h1{
+.article-header {
+    margin-bottom: 50px;
+}
 
-font-size:48px;
+.article-header .category {
+    display: inline-block;
 
-color:white;
+    margin-bottom: 14px;
 
+    color: #38bdf8;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 
+.article-header h1 {
+    margin: 0;
 
-.about-section{
+    color: #f8fafc;
 
-padding:40px 0;
-
+    font-size: 40px;
+    line-height: 1.25;
+    font-weight: 700;
 }
 
 
+.article-header .meta {
+    margin-top: 16px;
 
-.about-card{
+    color: #94a3b8;
 
-background:#1e293b;
-
-padding:35px;
-
-border-radius:20px;
-
-margin-bottom:30px;
-
-border:1px solid #334155;
-
+    font-size: 15px;
 }
 
 
+/* ===============================
+   ARTICLE CONTENT
+   =============================== */
 
-.about-card h2{
+.article-content {
+    color: #cbd5e1;
 
-color:#38bdf8;
+    font-size: 16px;
 
-margin-bottom:20px;
-
+    line-height: 1.8;
 }
 
 
+.article-content h2 {
+    margin-top: 52px;
+    margin-bottom: 18px;
 
-.about-card p{
+    color: #f8fafc;
 
-line-height:1.8;
-
-font-size:16px;
-
+    font-size: 28px;
+    line-height: 1.3;
 }
 
 
+.article-content h3 {
+    margin-top: 38px;
+    margin-bottom: 15px;
 
-.tag-box{
+    color: #f8fafc;
 
-display:flex;
-
-flex-wrap:wrap;
-
-gap:15px;
-
+    font-size: 22px;
 }
 
 
-
-.tag-box span{
-
-background:#0f172a;
-
-padding:12px 20px;
-
-border-radius:30px;
-
-color:#38bdf8;
-
-border:1px solid #334155;
-
+.article-content p {
+    margin-bottom: 25px;
 }
 
 
-
-.motto{
-
-text-align:center;
-
+.article-content strong {
+    color: #f8fafc;
 }
 
 
+/* ===============================
+   LISTS
+   =============================== */
 
-.motto h3{
+.article-content ul {
+    margin: 20px 0 30px;
 
-color:#38bdf8;
+    padding-left: 28px;
+}
 
-font-style:italic;
 
-font-size:25px;
+.article-content li {
+    margin: 9px 0;
+}
 
+
+.article-content li::marker {
+    color: #38bdf8;
+}
+
+
+/* ===============================
+   CODE
+   =============================== */
+
+.article-content pre {
+    margin: 30px 0;
+
+    padding: 22px;
+
+    overflow-x: auto;
+
+    background: #080f1d;
+
+    border-left: 3px solid #38bdf8;
+    border-radius: 7px;
+
+    color: #7dd3fc;
+
+    font-family: Consolas, "Courier New", monospace;
+
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+.article-content code {
+    font-family: Consolas, "Courier New", monospace;
+}
+
+
+/* ===============================
+   TABLE
+   =============================== */
+
+.article-content table {
+    width: 100%;
+
+    margin: 30px 0;
+
+    border-collapse: collapse;
+
+    background: #111c2e;
+
+    color: #cbd5e1;
+}
+
+
+.article-content th,
+.article-content td {
+    padding: 13px 16px;
+
+    border: 1px solid #26364b;
+
+    text-align: left;
+}
+
+
+.article-content th {
+    color: #f8fafc;
+
+    background: #18253a;
+}
+
+
+/* ===============================
+   BACK BUTTON
+   =============================== */
+
+.back-btn {
+    display: inline-block;
+
+    margin-top: 55px;
+
+    color: #38bdf8;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+
+.back-btn:hover {
+    text-decoration: underline;
+}
+
+
+/* ===============================
+   MOBILE
+   =============================== */
+
+@media (max-width: 768px) {
+
+    .article {
+        padding-top: 120px;
+    }
+
+    .article .container {
+        width: 90%;
+    }
+
+    .article-header h1 {
+        font-size: 30px;
+    }
+
+    .article-content {
+        font-size: 15.5px;
+    }
+
+    .article-content h2 {
+        font-size: 25px;
+    }
+
+    .article-content table {
+        display: block;
+        overflow-x: auto;
+    }
 }
