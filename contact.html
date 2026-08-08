@@ -126,32 +126,77 @@ I'd love to hear from you.
 
 <div class="contact-right">
 
-<form>
+<form id="whatsappForm">
 
-<input type="text" placeholder="Your Name" required>
+    <input
+        type="text"
+        id="name"
+        placeholder="Your Name"
+        required
+    >
 
-<input type="email" placeholder="Your Email" required>
+    <input
+        type="email"
+        id="email"
+        placeholder="Your Email"
+        required
+    >
 
-<input type="text" placeholder="Subject" required>
+    <input
+        type="text"
+        id="subject"
+        placeholder="Subject"
+        required
+    >
 
-<textarea rows="7" placeholder="Your Message"></textarea>
+    <textarea
+        id="message"
+        rows="7"
+        placeholder="Your Message"
+        required
+    ></textarea>
 
-<button class="btn">
-
-Send Message
-
-</button>
+    <button type="submit" class="btn">
+        Send Message
+    </button>
 
 </form>
 
 </div>
 
-</div>
 
-</div>
+<script>
 
-</section>
+document.getElementById("whatsappForm").addEventListener("submit", function(event) {
 
+    event.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const subject = document.getElementById("subject").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    const whatsappMessage =
+`Hello Harish,
+
+Name: ${name}
+Email: ${email}
+Subject: ${subject}
+
+Message:
+${message}
+
+Sent from your website.`;
+
+    const whatsappURL =
+        "https://wa.me/918953066404?text=" +
+        encodeURIComponent(whatsappMessage);
+
+    window.open(whatsappURL, "_blank");
+
+});
+
+</script>
 <footer class="footer">
 
     <div class="container footer-content">
