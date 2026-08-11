@@ -92,18 +92,23 @@ blockquote {
 
 
 .quote-description {
+    width: 100%;
+    max-width: 780px;
 
-    max-width: 650px;
-
-    margin: 35px auto 0 auto;
+    margin: 55px auto 0;
 
     color: #cbd5e1;
 
     font-size: 16px;
 
-    line-height: 1.8;
+    line-height: 1.9;
+
+    text-align: left;
 }
 
+.quote-description p {
+    margin: 0 0 18px;
+}
 
 /* =========================================
    MOBILE
@@ -146,18 +151,6 @@ blockquote {
         font-size: 14px;
     }
 
-}
-.quote-description {
-    width: 100% !important;
-    max-width: 100% !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    float: none !important;
-    position: static !important;
-}
-
-.quote-container {
-    display: block !important;
 }
 
 
