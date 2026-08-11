@@ -147,3 +147,22 @@ blockquote {
     }
 
 }
+.quote-description {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    float: none !important;
+    position: static !important;
+}
+
+.quote-container {
+    display: block !important;
+}
+
+
+
+
+
+
+
