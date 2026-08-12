@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+<title>Mobile Cybersecurity Guide by Harish Rajput</title>
+<meta name="description" content="Mobile Cybersecurity Guide by Harish Rajput — a practical 90-topic guide to mobile phone security, hacker psychology, phishing, malware, account protection, privacy, incident response and defense.">
+<meta name="keywords" content="mobile cybersecurity, mobile security, phone security, smartphone security, Android security, iPhone security, hacker psychology, phishing, smishing, malware, spyware, cyber safety, mobile hacking, account security, Harish Rajput">
+<meta name="author" content="Harish Rajput">
+<meta name="publisher" content="Harish Rajput">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="googlebot" content="index, follow">
+<link rel="canonical" href="https://harishrajput.co.in/">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mobile Cybersecurity Guide by Harish Rajput">
+<meta property="og:description" content="A practical 90-topic mobile cybersecurity guide covering hacker psychology, phishing, malicious apps, permissions, account security, privacy, detection and incident response.">
+<meta property="og:url" content="https://harishrajput.co.in/">
+<meta property="og:site_name" content="Harish Rajput">
+<meta property="og:locale" content="en_IN">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Mobile Cybersecurity Guide by Harish Rajput">
+<meta name="twitter:description" content="Learn how hackers target mobile users and how to defend your phone, accounts, identity and money.">
+<meta name="theme-color" content="#020617">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"Mobile Cybersecurity Guide by Harish Rajput",
+  "description":"A practical 90-topic guide to mobile phone security, hacker psychology, phishing, malware, account protection, privacy, incident response and defense.",
+  "author":{"@type":"Person","name":"Harish Rajput","url":"https://harishrajput.co.in/"},
+  "publisher":{"@type":"Person","name":"Harish Rajput","url":"https://harishrajput.co.in/"},
+  "mainEntityOfPage":{"@type":"WebPage","@id":"https://harishrajput.co.in/"},
+  "inLanguage":"en-IN"
+}
+</script>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'] }
+    }
+  }
+}
+</script>
+
+<style>
+  html { scroll-behavior: smooth; }
+  body { background: #020617; }
+  .glass { background: rgba(15,23,42,.72); backdrop-filter: blur(14px); }
+  .topic.active { border-color: rgb(34 211 238); background: rgba(8,47,73,.45); }
+  .answer { display:none; }
+  .answer.open { display:block; animation: fade .22s ease-out; }
+  @keyframes fade { from {opacity:0; transform:translateY(-4px)} to {opacity:1; transform:translateY(0)} }
+  .codebox { background:#020617; border:1px solid #1e293b; }
+  ::selection { background:#22d3ee; color:#082f49; }
+</style>
+<style>.site-header{background:#111827;border-bottom:1px solid rgba(56,189,248,.15);position:sticky;top:0;z-index:50}.site-header-container{width:min(1150px,92%);margin:auto;min-height:80px;display:flex;align-items:center;justify-content:space-between;gap:30px}.site-logo{color:#fff;font-size:28px;font-weight:700;white-space:nowrap}.site-logo span{color:#38bdf8}.site-nav ul{list-style:none;display:flex;align-items:center;gap:25px;flex-wrap:wrap;margin:0;padding:0}.site-nav a{color:#e2e8f0;text-decoration:none;font-weight:600;font-size:15px;transition:color .25s}.site-nav a:hover,.site-nav a.active{color:#38bdf8}.site-footer{border-top:1px solid rgba(56,189,248,.12);background:#111827;color:#e2e8f0}.site-footer-container{width:min(1150px,92%);margin:auto;padding:35px 0 28px;display:grid;grid-template-columns:1.3fr 1fr 1.2fr auto;align-items:center;gap:30px}.site-footer h3{margin:0;color:#fff;font-size:21px}.site-footer h3 span{color:#38bdf8}.site-footer p{margin:6px 0 0;color:#64748b;font-size:14px}.footer-links{display:flex;flex-wrap:wrap;gap:18px}.footer-links a{color:#94a3b8;text-decoration:none;font-size:14px;font-weight:600}.footer-links a:hover{color:#38bdf8}.footer-contact p{margin:4px 0}.footer-social{display:flex;gap:14px}.footer-social a{width:38px;height:38px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(56,189,248,.18);border-radius:50%;color:#94a3b8;text-decoration:none;transition:.25s}.footer-social a:hover{color:#38bdf8;border-color:#38bdf8}.site-footer-bottom{border-top:1px solid rgba(56,189,248,.08);text-align:center;padding:18px 15px;color:#64748b;font-size:13px}@media(max-width:850px){.site-header-container{padding:18px 0;flex-direction:column}.site-nav ul{justify-content:center;gap:15px 20px}.site-footer-container{grid-template-columns:1fr;text-align:center;justify-items:center}.footer-links{justify-content:center}.footer-social{justify-content:center}}@media(max-width:520px){.site-logo{font-size:24px}.site-nav a{font-size:13px}.site-nav ul{gap:12px 16px}}</style></head>
+
+<body class="text-slate-200 font-sans">
+<header class="site-header">
+  <div class="site-header-container">
+    <div class="site-logo">Harish<span> Rajput</span><small style="display:block;font-size:.62rem;font-weight:500;opacity:.7;letter-spacing:.02em;">Mobile Cybersecurity Guide</small></div>
+    <nav class="site-nav" aria-label="Main navigation"><ul>
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="blog.html" class="active">Blog</a></li><li><a href="research.html">Research</a></li><li><a href="travel.html">Travel</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="quotes.html">Quotes</a></li><li><a href="contact.html">Contact</a></li>
+    </ul></nav>
+  </div>
+</header>
+
+<main>
+<section class="max-w-7xl mx-auto px-4 sm:px-6 pt-16 pb-12">
+  <div class="max-w-4xl">
+    <p class="text-cyan-400 font-semibold tracking-widest uppercase text-xs mb-4">Mobile Cybersecurity Guide by Harish Rajput</p>
+    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight text-white">
+      How Hackers Think, How Phones Get Compromised & How to Defend Yourself
+    </h1>
+    <p class="mt-6 text-lg text-slate-300 leading-8">
+      A practical technical guide to protecting your smartphone, accounts, identity and money.
+      Select a topic below and the answer will appear on this page.
+    </p>
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a href="#topics" class="px-5 py-3 rounded-xl bg-cyan-400 text-slate-950 font-bold hover:bg-cyan-300">Start Learning</a>
+      <a href="#checklist" class="px-5 py-3 rounded-xl border border-slate-700 hover:border-cyan-500">Security Checklist</a>
+    </div>
+  </div>
+</section>
+
+<section id="learn" class="max-w-7xl mx-auto px-4 sm:px-6 pb-10">
+  <div class="grid lg:grid-cols-3 gap-5">
+    <div class="glass border border-slate-800 rounded-2xl p-6">
+      <div class="text-2xl mb-3">🧠</div>
+      <h2 class="text-xl font-bold text-white">Think Like an Attacker</h2>
+      <p class="mt-2 text-slate-400">Understand urgency, fear, curiosity, authority and trust—the human side of cyberattacks.</p>
+    </div>
+    <div class="glass border border-slate-800 rounded-2xl p-6">
+      <div class="text-2xl mb-3">📱</div>
+      <h2 class="text-xl font-bold text-white">Secure the Device</h2>
+      <p class="mt-2 text-slate-400">Learn about updates, permissions, applications, accounts, networks and physical security.</p>
+    </div>
+    <div class="glass border border-slate-800 rounded-2xl p-6">
+      <div class="text-2xl mb-3">🚨</div>
+      <h2 class="text-xl font-bold text-white">Respond to Incidents</h2>
+      <p class="mt-2 text-slate-400">Know what to check and what to do if your phone, account or financial information may be compromised.</p>
+    </div>
+  </div>
+</section>
+
+<section id="topics" class="max-w-7xl mx-auto px-4 sm:px-6 py-10">
+  <div class="grid lg:grid-cols-[330px_1fr] gap-6 items-start">
+    <aside class="lg:sticky lg:top-24">
+      <div class="glass border border-slate-800 rounded-2xl p-4">
+        <div class="px-3 pb-3">
+          <h2 class="font-bold text-white">Explore Topics</h2>
+          <p class="text-xs text-slate-500 mt-1">Click a topic to read its answer here.</p>
+        </div>
+        <div id="topicList" class="space-y-2"></div>
+      </div>
+    </aside>
+
+    <article id="answerPanel" class="glass border border-slate-800 rounded-2xl p-6 sm:p-8 min-h-[520px]">
+      <div class="h-full flex flex-col justify-center items-center text-center py-16">
+        <div class="text-5xl mb-5">🔐</div>
+        <h2 class="text-2xl font-bold text-white">Choose a topic</h2>
+        <p class="mt-3 max-w-xl text-slate-400">Click any topic on the left. Its technical explanation, warning signs and defense guidance will appear here without leaving the page.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="checklist" class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
+  <div class="max-w-4xl">
+    <p class="text-cyan-400 uppercase tracking-widest text-xs font-bold">Quick Audit</p>
+    <h2 class="text-3xl font-black text-white mt-2">Mobile Security Checklist</h2>
+    <p class="text-slate-400 mt-3">Use this as a quick self-audit.</p>
+  </div>
+  <div id="checklistGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 mt-7"></div>
+</section>
+
+<section id="about" class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
+  <div class="border-t border-slate-800 pt-10 max-w-4xl">
+    <h2 class="text-2xl font-bold text-white">The Security Mindset</h2>
+    <p class="mt-4 text-slate-300 leading-8">
+      Cybersecurity is not about becoming afraid of every message, application or Wi-Fi network.
+      It is about reducing unnecessary risk. Verify before trusting, limit permissions, keep software
+      updated, protect recovery accounts, and slow down when someone creates urgency.
+    </p>
+    <div class="codebox rounded-2xl p-5 mt-6 text-cyan-300 font-mono text-sm leading-7">
+      Stop → Think → Observe → Prove
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer-container">
+    <div class="footer-logo"><h3>Harish <span>Rajput</span></h3><p>System & Network Engineer</p></div>
+    <div class="footer-links"><a href="index.html">Home</a><a href="blog.html">Blog</a><a href="research.html">Research</a><a href="contact.html">Contact</a></div>
+    <div class="footer-contact"><p>📧 me.hcr8953@yahoo.com</p><p>📍 India</p></div>
+    <div class="footer-social"><a href="https://in.linkedin.com/in/harish-rajput-19a75b21a"><i class="fab fa-linkedin-in"></i></a><a href="https://www.instagram.com/deepreflectionsdiary/"><i class="fab fa-instagram"></i></a><a href="https://www.facebook.com/harishchandrarajpootpersonal/"><i class="fab fa-facebook-f"></i></a></div>
+  </div><div class="site-footer-bottom">© 2026 Harish Rajput • All Rights Reserved</div>
+</footer>
+
+<script>
+const topics = [
+{title:"01 · What Is Phone Hacking?",tag:"Foundation",html:`<h2>What Does “Phone Hacking” Actually Mean?</h2><p>Phone hacking is not one single technique. A device or its digital identity can be attacked through malicious software, phishing, social engineering, stolen credentials, SIM-related attacks, vulnerable software, unsafe configuration, physical access, network attacks or sophisticated exploitation.</p><p>Device compromise means access to the phone; account compromise means access to an online service; identity compromise means personal information is abused to impersonate you.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"02 · Why Smartphones Are Valuable Targets",tag:"Foundation",html:`<h2>Why Are Smartphones High-Value Targets?</h2><p>A modern smartphone combines communication, banking, identity, authentication, cloud storage, photos, location and social accounts in one device.</p><p>The more digital services connected to a phone, the more important it becomes to secure both the device and the accounts behind it.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"03 · Mobile Attack Surface",tag:"Architecture",html:`<h2>Understanding the Mobile Attack Surface</h2><p>The attack surface includes applications, browsers, Wi-Fi, mobile networks, Bluetooth, USB, accounts, cloud services and physical access.</p><p>Security means reducing unnecessary exposure while keeping essential functions usable.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"04 · Hacker Psychology",tag:"Human Layer",html:`<h2>How Hackers Think</h2><p>Attackers may first ask who you are, what you use, which account is valuable and what would make you trust them.</p><p>Common psychological triggers include urgency, fear, curiosity, authority, greed and trust. Understanding these patterns makes manipulation easier to recognize.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"05 · Urgency",tag:"Social Engineering",html:`<h2>Urgency Is a Security Warning</h2><p>Attackers often say your account will be blocked or money will be lost unless you act immediately.</p><p>Stop and independently verify the request. Urgency is not proof of identity.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"06 · Fear",tag:"Social Engineering",html:`<h2>Fear Can Override Good Decisions</h2><p>Threats involving police, banks, legal trouble or account closure can cause people to act without checking facts.</p><p>End the interaction and use an official channel to verify the claim.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"07 · Curiosity",tag:"Social Engineering",html:`<h2>Curiosity as an Attack Vector</h2><p>Messages such as “Is this you?” or “Someone posted your photo” are designed to make you click before thinking.</p><p>Treat unexpected links and attachments as untrusted until verified.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"08 · Authority & Impersonation",tag:"Social Engineering",html:`<h2>Why Authority Works</h2><p>Attackers may impersonate customer support, officials, employers or technical staff.</p><p>Professional language and logos do not prove identity. Verify through an independent official channel.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"09 · Greed & Rewards",tag:"Social Engineering",html:`<h2>Free Money Is a Common Hook</h2><p>Fake prizes, jobs, investments and unrealistic discounts exploit the desire for a reward.</p><p>If an offer requires secrecy, urgency, fees or credentials, stop and verify it.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"10 · Trust",tag:"Social Engineering",html:`<h2>Trust Can Be Exploited</h2><p>Attackers may impersonate friends, relatives or colleagues using information gathered from public sources.</p><p>Contact the person using a known method rather than replying to the suspicious message.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"11 · Cognitive Overload",tag:"Social Engineering",html:`<h2>When Too Much Information Is Used</h2><p>Scammers can overwhelm victims with technical terms and multiple urgent claims.</p><p>Slow the conversation down. Ask one question at a time and verify independently.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"12 · Phishing",tag:"Common Attack",html:`<h2>Phishing Explained</h2><p>Phishing attempts to trick users into revealing information or performing an unsafe action.</p><p>Verify the sender, destination and request. Prefer opening the official app yourself instead of following an unexpected link.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"13 · Smishing",tag:"Common Attack",html:`<h2>SMS Phishing</h2><p>Smishing is phishing delivered through text messages. Messages may imitate banks, delivery companies or government services.</p><p>Do not trust a message merely because it contains your name, a logo or a realistic-looking link.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"14 · Fake Websites",tag:"Web Security",html:`<h2>How Fake Websites Fool People</h2><p>A phishing site can copy branding, layouts and login forms. HTTPS alone does not prove that the site is legitimate.</p><p>Check the domain and how you reached the page. Prefer a known official website or application.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"15 · QR-Code Attacks",tag:"Web Security",html:`<h2>QR Codes Are Not Automatically Safe</h2><p>A QR code can open a legitimate page, phishing site, payment request or download.</p><p>Before entering credentials or approving a payment, inspect the destination and confirm what action you are authorizing.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"16 · Malicious Applications",tag:"Application Security",html:`<h2>Malicious and Modified Apps</h2><p>Unknown APKs, cracked apps, fake updates and modified software can introduce unwanted functionality.</p><p>Use trusted software sources and review permissions before installation.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"17 · App Permissions",tag:"Application Security",html:`<h2>Why Permissions Matter</h2><p>Permissions determine what capabilities an application may access.</p><p>Give applications only the access they genuinely need. Review permissions periodically.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"18 · Accessibility Access",tag:"Application Security",html:`<h2>Why Accessibility Access Deserves Attention</h2><p>Accessibility services are legitimate and powerful. An application that does not genuinely need such access should not receive it casually.</p><p>Review unfamiliar accessibility services and remove access you did not intentionally grant.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"19 · Notification Access",tag:"Application Security",html:`<h2>Notification Access Can Expose Sensitive Data</h2><p>Notifications can contain messages, authentication alerts and other sensitive information.</p><p>Only grant notification access to applications you trust and understand.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"20 · Device Administrator Access",tag:"Application Security",html:`<h2>Review Device Administrator Controls</h2><p>Some device-management capabilities are powerful and legitimate, but unfamiliar access deserves investigation.</p><p>Review device administrator or management settings if you suspect an application has unusual control.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"21 · Install Unknown Apps",tag:"Android",html:`<h2>Sideloading and APK Risk</h2><p>Installing software outside trusted distribution channels increases uncertainty about what you are installing.</p><p>Only sideload when you understand the source, package and security implications.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"22 · Android Security",tag:"Android",html:`<h2>Android Uses Multiple Security Layers</h2><p>Android uses sandboxing, permissions, application signing and other platform protections.</p><p>Keep Android updated, use trusted software sources and review powerful permissions.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"23 · iPhone / iOS Security",tag:"iPhone",html:`<h2>iOS Is Not “Unhackable”</h2><p>iOS uses strong platform protections such as sandboxing and code-signing, but no platform should be considered magically immune to attack.</p><p>Keep iOS updated, secure the Apple Account and use device-finding and anti-theft features.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"24 · Operating System Updates",tag:"Device Security",html:`<h2>Why Security Updates Matter</h2><p>Security updates fix vulnerabilities that attackers may otherwise exploit.</p><p>Enable automatic updates where practical and install security updates promptly.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"25 · App Updates",tag:"Application Security",html:`<h2>Why Application Updates Matter</h2><p>Applications can contain vulnerabilities that are fixed through later versions.</p><p>Keep important applications updated and remove software that is no longer maintained.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"26 · Strong Screen Lock",tag:"Physical Security",html:`<h2>Your Lock Screen Is a Security Boundary</h2><p>A weak PIN reduces protection for everything stored behind it.</p><p>Use a strong PIN or password, automatic locking and appropriate biometric protection.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"27 · Lock-Screen Notifications",tag:"Physical Security",html:`<h2>Protect Sensitive Notifications</h2><p>Messages and authentication alerts can reveal information even when the device is locked.</p><p>Review what notification content is visible on the lock screen.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"28 · Biometrics",tag:"Device Security",html:`<h2>Using Biometrics Correctly</h2><p>Biometrics provide convenience, while the device passcode remains a fundamental security control.</p><p>Use a strong underlying passcode and understand your device’s biometric behavior.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"29 · Find My Device / Find My",tag:"Recovery",html:`<h2>Prepare Before Your Phone Is Lost</h2><p>Device-finding features can help locate, lock or erase a lost device.</p><p>Enable them before an incident and confirm that your recovery account is secure.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"30 · Backups",tag:"Recovery",html:`<h2>Backups Are a Security Control</h2><p>Backups reduce the impact of device loss, damage or a serious incident.</p><p>Protect the account controlling the backup and verify that important data can actually be recovered.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"31 · Google Account",tag:"Account Security",html:`<h2>Protect Your Google Account</h2><p>A Google Account can control Gmail, Photos, Drive, Android services and recovery options.</p><p>Use strong authentication, unique credentials, passkeys where supported and review active sessions.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"32 · Apple Account",tag:"Account Security",html:`<h2>Protect Your Apple Account</h2><p>An Apple Account can control iCloud, device services and recovery functions.</p><p>Secure it with strong authentication, trusted recovery methods and session reviews.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"33 · Email Security",tag:"Account Security",html:`<h2>Email Is a Recovery Key</h2><p>Email is often used to reset other accounts.</p><p>Your primary email should have unique credentials and strong MFA or passkey protection.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"34 · Password Reuse",tag:"Authentication",html:`<h2>Why Password Reuse Is Dangerous</h2><p>If one service leaks a password and you reused it elsewhere, attackers may try that credential on other services.</p><p>Use unique passwords for important accounts.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"35 · Credential Stuffing",tag:"Authentication",html:`<h2>Credential Stuffing Explained</h2><p>Attackers can automate attempts to use previously leaked username-password combinations on other services.</p><p>Unique passwords and MFA greatly reduce the value of reused credentials.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"36 · Password Managers",tag:"Authentication",html:`<h2>Why Password Managers Help</h2><p>A password manager can generate and store unique credentials so you do not have to memorize dozens of passwords.</p><p>Choose a reputable manager and strongly protect the vault and recovery methods.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"37 · Passkeys",tag:"Authentication",html:`<h2>Passkeys and Phishing Resistance</h2><p>Passkeys use cryptographic credentials and can reduce reliance on passwords.</p><p>Use passkeys when trusted services support them, especially for high-value accounts.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"38 · Multi-Factor Authentication",tag:"Authentication",html:`<h2>MFA Adds a Security Layer</h2><p>MFA requires an additional authentication factor beyond a password.</p><p>Prefer stronger methods such as passkeys, authenticator-based methods or security keys when appropriate.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"39 · OTP Safety",tag:"Authentication",html:`<h2>Never Share Verification Codes</h2><p>A verification code is intended to prove that you are performing an action.</p><p>No legitimate support process should require you to disclose an authentication code to an unverified caller.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"40 · SIM Swap",tag:"Telecom Security",html:`<h2>Understanding SIM-Swap Risk</h2><p>An attacker may try to convince a carrier to move your number to another SIM or eSIM.</p><p>Protect the carrier account, prefer stronger MFA where possible and investigate unexpected loss of service.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"41 · Mobile Network Loss",tag:"Telecom Security",html:`<h2>When Your Phone Suddenly Loses Service</h2><p>Unexpected loss of calls and SMS can have ordinary causes, but a sudden unexplained outage can justify investigation.</p><p>Contact your carrier through an official channel, especially if account-security alerts occur at the same time.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"42 · Banking Security",tag:"Financial Security",html:`<h2>Protect Your Banking Apps</h2><p>Banking credentials and transaction approvals are high-value targets.</p><p>Use official apps, keep them updated, never share authentication secrets and monitor transactions.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"43 · UPI Security",tag:"Financial Security",html:`<h2>UPI Safety Basics</h2><p>Never share your UPI PIN and do not approve transactions you did not initiate.</p><p>Remember that receiving money and sending money are different actions. Verify every payment request.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"44 · Remote-Access Scams",tag:"Financial Security",html:`<h2>Do Not Give Strangers Remote Access</h2><p>Attackers may claim to be support staff and ask you to install remote-control software.</p><p>Do not grant remote access to unverified people, especially for banking problems.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"45 · WhatsApp Security",tag:"Messaging",html:`<h2>Protect Your WhatsApp Account</h2><p>Messaging accounts connect you to contacts and identity and can be targeted for takeover.</p><p>Enable available two-step verification, review linked devices and never share verification codes.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"46 · Linked Devices",tag:"Messaging",html:`<h2>Review Active Sessions</h2><p>Unknown sessions can indicate unauthorized account access.</p><p>Regularly review linked devices and remove anything you do not recognize.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"47 · Bluetooth",tag:"Network Security",html:`<h2>Bluetooth Safety</h2><p>Bluetooth is not automatically dangerous, but unexpected pairing requests and old connections create unnecessary exposure.</p><p>Reject unexpected pairing requests and remove old pairings.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"48 · Public Wi-Fi",tag:"Network Security",html:`<h2>Public Wi-Fi: Real Risk vs Myth</h2><p>Public Wi-Fi is not automatically a hack. HTTPS protects much web traffic, but fake hotspots and phishing remain possible.</p><p>Prefer trusted networks for sensitive actions and verify websites independently.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"49 · VPN",tag:"Network Security",html:`<h2>What a VPN Can and Cannot Do</h2><p>A VPN can protect certain network paths but cannot stop phishing, malware or social engineering.</p><p>Treat a VPN as one layer, not a complete security solution.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"50 · Browser Security",tag:"Web Security",html:`<h2>Secure Your Mobile Browser</h2><p>Browsers can expose users to phishing, malicious downloads, redirects and notification abuse.</p><p>Avoid unknown downloads, suspicious prompts and unexpected browser notifications.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"51 · Browser Notifications",tag:"Web Security",html:`<h2>Notification Abuse</h2><p>Some sites use notification permissions to deliver fake security warnings, prizes or phishing links.</p><p>Grant website notifications only when you understand why they are needed.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"52 · Physical Security",tag:"Physical Security",html:`<h2>Cybersecurity Includes Physical Access</h2><p>An attacker with physical access may attempt to exploit an unlocked phone, guess a PIN or manipulate settings.</p><p>Keep the device locked, protect your PIN and don't leave it unattended.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"53 · Shoulder Surfing",tag:"Physical Security",html:`<h2>Protect Your PIN in Public</h2><p>Someone watching you enter a PIN can defeat part of your security without any malware.</p><p>Shield the screen and be aware of people nearby.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"54 · USB Security",tag:"Physical Security",html:`<h2>Be Careful With USB Connections</h2><p>USB connections can provide more than charging depending on device configuration and authorization.</p><p>Use trusted computers and do not approve unexpected prompts.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"55 · Rooting & Jailbreaking",tag:"Advanced",html:`<h2>Security Trade-Offs of Rooting and Jailbreaking</h2><p>Modifying platform security boundaries can increase control but may weaken protections and complicate updates.</p><p>Understand the security trade-offs before modifying a device.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"56 · Developer Options",tag:"Advanced",html:`<h2>Developer Features Need Context</h2><p>Developer tools are useful for development and testing but can expose powerful functions.</p><p>Enable only what you need and disable unnecessary debugging features when finished.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"57 · Encryption",tag:"Architecture",html:`<h2>What Encryption Protects</h2><p>Device encryption helps protect stored information against certain forms of unauthorized access.</p><p>Encryption is essential, but it cannot protect you from voluntarily giving away credentials or approving malicious actions.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"58 · Secure Boot",tag:"Architecture",html:`<h2>Secure Boot and Chain of Trust</h2><p>Secure boot mechanisms help ensure that trusted software is loaded during startup.</p><p>Keep the device in its supported security configuration unless you have a clear technical reason to change it.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"59 · Sandboxing",tag:"Architecture",html:`<h2>Why App Sandboxing Matters</h2><p>Sandboxing limits what applications can directly access.</p><p>Avoid granting powerful permissions unnecessarily because permissions can expand an application's capabilities.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"60 · Least Privilege",tag:"Architecture",html:`<h2>The Principle of Least Privilege</h2><p>Applications and accounts should receive only the access they need.</p><p>Review and remove unnecessary permissions.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"61 · Zero Trust",tag:"Security Mindset",html:`<h2>Verify Instead of Assuming Trust</h2><p>Zero trust means not automatically trusting people, applications, devices or networks.</p><p>Ask how you can independently verify an unexpected request.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"62 · Malware",tag:"Threats",html:`<h2>What Malware Is</h2><p>Malware is software designed to perform unwanted or harmful actions.</p><p>Examples include spyware, banking malware, ransomware, credential stealers and remote-access malware.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"63 · Spyware",tag:"Threats",html:`<h2>Spyware Explained</h2><p>Spyware attempts to collect information about a victim, depending on its capabilities and permissions.</p><p>Do not diagnose spyware from one symptom. Investigate systematically and seek expert help for serious cases.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"64 · Zero-Day Vulnerabilities",tag:"Advanced",html:`<h2>What Is a Zero-Day?</h2><p>A zero-day is a vulnerability that is unknown or unpatched at the time it is exploited.</p><p>Keep software updated and understand that advanced exploits exist but are not the most common threat for ordinary users.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"65 · Zero-Click Attacks",tag:"Advanced",html:`<h2>What Does Zero-Click Mean?</h2><p>A zero-click attack can potentially exploit a device without requiring the victim to deliberately click something.</p><p>These attacks can be sophisticated. Prompt updates and high-risk security modes can matter for people with elevated threat models.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"66 · Signs of Possible Compromise",tag:"Detection",html:`<h2>What Might Look Suspicious?</h2><p>Possible indicators include unknown applications, unexpected login alerts, unknown sessions, unusual permissions, browser changes or unrecognized financial activity.</p><p>These are clues, not automatic proof. Battery drain and crashes also have many ordinary causes.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"67 · Account Session Review",tag:"Detection",html:`<h2>Check Where Your Accounts Are Logged In</h2><p>Many services provide lists of active sessions and devices.</p><p>Remove unknown sessions, change credentials when appropriate and enable stronger authentication.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"68 · Social Media Privacy",tag:"Privacy",html:`<h2>Oversharing Can Help Attackers</h2><p>Public information can be combined into convincing social-engineering stories.</p><p>Limit unnecessary exposure of phone numbers, documents, family details, workplace information and exact travel plans.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"69 · Photo Metadata",tag:"Privacy",html:`<h2>Information Hidden in Photos</h2><p>Depending on the platform and settings, photos can contain metadata such as time, device or location information.</p><p>Review privacy settings before publishing highly sensitive photographs.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"70 · Fake Customer Support",tag:"Social Engineering",html:`<h2>The Fake Support Trap</h2><p>Attackers may create fake support numbers or profiles and then offer to fix a problem they invented or exaggerated.</p><p>Get support details from the organization's official app or website.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"71 · Fake Job Scams",tag:"Social Engineering",html:`<h2>Fake Job Offers</h2><p>Fraudulent job offers can be used to collect money, identity documents or account information.</p><p>Verify the employer independently before sending sensitive information or paying fees.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"72 · Investment Scams",tag:"Financial Security",html:`<h2>Why Investment Scams Work</h2><p>Scams often combine authority, social proof, urgency and fake evidence of profits.</p><p>A professional dashboard or application does not prove that an investment is legitimate.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"73 · Government / Police Impersonation",tag:"Social Engineering",html:`<h2>Authority Impersonation</h2><p>Attackers may claim to represent government or law enforcement and use fear to demand immediate action.</p><p>Do not make payments or disclose sensitive information based only on an unsolicited call.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"74 · “Your Account Is Hacked” Scam",tag:"Social Engineering",html:`<h2>When the Attacker Pretends to Be the Rescuer</h2><p>An attacker may tell you that you have been hacked and then offer to protect you.</p><p>Never trust a stranger simply because they claim to be a security expert. Verify independently.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"75 · Caller ID",tag:"Identity",html:`<h2>Caller ID Is Not Absolute Proof</h2><p>Caller ID and display names can be misleading and should not be treated as complete authentication.</p><p>For high-risk requests, end the call and contact the organization through a known official number.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"76 · Security Theater",tag:"Awareness",html:`<h2>Technical Words Can Be Used to Scare You</h2><p>Attackers may mention IP addresses, firewalls, encryption or servers to sound legitimate.</p><p>Technical vocabulary is not evidence. Ask for independently verifiable facts.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"77 · Recovery Chain",tag:"Incident Response",html:`<h2>Secure Accounts in the Right Order</h2><p>Accounts that can reset other accounts are especially important.</p><p>Prioritize your primary email/cloud identity, then other high-value services based on the incident.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"78 · What Not to Do After an Attack",tag:"Incident Response",html:`<h2>Avoid Making the Incident Worse</h2><p>Do not panic, pay an attacker to protect your money, install random “security” software or give credentials to someone who contacted you.</p><p>Document what happened and use trusted channels for help.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"79 · Factory Reset",tag:"Incident Response",html:`<h2>When a Factory Reset Makes Sense</h2><p>A factory reset can be useful when device trust cannot be established, but it is not automatically the first response.</p><p>Secure accounts, preserve evidence when needed, back up essential data and reinstall only trusted software.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"80 · Lost Phone",tag:"Incident Response",html:`<h2>What to Do When Your Phone Is Lost</h2><p>Use device-finding features, lock the device, secure important accounts and contact your carrier when appropriate.</p><p>Monitor banking and account activity after the loss.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"81 · Stolen Unlocked Phone",tag:"Incident Response",html:`<h2>Why an Unlocked Theft Is Serious</h2><p>Temporary physical access can expose applications, sessions and sensitive data.</p><p>Lock the device remotely if possible and immediately secure high-value accounts from a trusted device.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"82 · Compromised Bank Account",tag:"Incident Response",html:`<h2>Financial Incident Response</h2><p>Unauthorized transactions should be treated as urgent.</p><p>Contact your bank or payment provider through an official channel, report the activity and preserve relevant information.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"83 · Security vs Convenience",tag:"Security Mindset",html:`<h2>Security Is a Trade-Off</h2><p>More convenience can mean more permissions, automatic access or fewer verification steps.</p><p>Choose the security level appropriate for the value and risk of what you are protecting.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"84 · Don't Become Paranoid",tag:"Security Mindset",html:`<h2>Security Awareness Is Not Paranoia</h2><p>Not every crash, battery drain or unknown call means hacking.</p><p>Security professionals observe evidence, form hypotheses, test them and respond proportionally.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"85 · What Hackers Usually Want",tag:"Threat Model",html:`<h2>Attacker Objectives</h2><p>Attackers may want money, credentials, identity information, intelligence or access to other systems.</p><p>Understanding the objective helps you identify what needs the strongest protection.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"86 · Human Firewall",tag:"Security Mindset",html:`<h2>You Are Part of the Security System</h2><p>Technical controls can fail if a person is manipulated into giving away the keys.</p><p>Awareness, verification and good habits complement encryption, MFA, sandboxing and other controls.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"87 · Five Verification Questions",tag:"Security Mindset",html:`<h2>Ask Before You Act</h2><p>Before responding to an unexpected request, ask: Who is asking? Why? What exactly do they want? What could happen? Can I verify independently?</p><p>If you cannot answer confidently, stop and verify.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"88 · Threat Modeling",tag:"Advanced",html:`<h2>Threat Model Your Own Phone</h2><p>Identify what you are protecting, who might attack you and which attack paths are realistic.</p><p>For many users, phishing, social engineering, credential theft and malicious apps deserve more attention than extremely rare advanced exploits.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"89 · Defense in Depth",tag:"Security Architecture",html:`<h2>Build Multiple Layers</h2><p>Strong authentication, updates, least privilege, trusted software, monitoring, backups and awareness work together.</p><p>If one layer fails, another may reduce the impact. This is defense in depth.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`},
+{title:"90 · Final Security Philosophy",tag:"Conclusion",html:`<h2>The Security Mindset to Keep</h2><p>You do not need to become afraid of every message, application or network. You need to become difficult to manipulate.</p><p>Stop when something feels urgent. Think before clicking. Verify before trusting. Limit before allowing. Update before ignoring. That is practical cybersecurity.</p><div class="callout"><strong>Defensive principle:</strong> Verify unexpected requests independently, minimize permissions, keep software updated and protect your recovery accounts.</div>`}
+];
+
+const checklist = ["Strong screen lock", "Automatic locking", "Device-finding enabled", "Secure backup", "Lock-screen notifications reviewed", "Operating system updated", "Apps updated", "Unknown apps removed", "App permissions reviewed", "Accessibility access reviewed", "Notification access reviewed", "Device administrator access reviewed", "VPN/profiles reviewed", "Unknown app-install sources disabled when not needed", "Developer/debugging features reviewed", "Primary email secured", "Google/Apple account secured", "MFA enabled", "Passkeys used where supported", "Recovery methods reviewed", "Unknown account sessions removed", "Unique passwords", "Password manager considered", "WhatsApp two-step verification enabled", "Unknown messaging sessions removed", "OTP never shared", "UPI PIN never shared", "Banking alerts enabled", "Remote access avoided", "Banking apps updated", "Unknown Wi-Fi treated cautiously", "Bluetooth pairings reviewed", "Browser permissions reviewed", "Suspicious downloads avoided", "Website notifications reviewed", "SIM/carrier account protected", "Social-media oversharing reduced", "Sensitive photo metadata considered", "USB prompts treated cautiously", "PIN protected from shoulder surfing", "Lost-phone procedure understood", "Bank fraud contact procedure known", "Important backups tested", "Security updates enabled", "High-value accounts reviewed regularly", "Old accounts closed or secured", "Security settings reviewed periodically", "Suspicious incidents documented", "Official support channels used", "Security awareness maintained", "STOP method remembered"];
+
+const topicList = document.getElementById("topicList");
+const answerPanel = document.getElementById("answerPanel");
+
+function renderTopics(){
+  topicList.innerHTML = topics.map((t,i)=>`
+    <button class="topic w-full text-left border border-slate-800 rounded-xl px-4 py-3 hover:border-slate-600 transition"
+      data-index="${i}">
+      <span class="block text-sm font-semibold text-slate-200">${t.title}</span>
+      <span class="block text-xs text-slate-500 mt-1">${t.tag}</span>
+    </button>
+  `).join("");
+
+  topicList.querySelectorAll(".topic").forEach(btn=>{
+    btn.addEventListener("click",()=>openTopic(Number(btn.dataset.index)));
+  });
+}
+
+function openTopic(index){
+  const t = topics[index];
+  topicList.querySelectorAll(".topic").forEach((b,i)=>b.classList.toggle("active",i===index));
+  answerPanel.innerHTML = `
+    <div class="flex flex-wrap items-center gap-2 mb-5">
+      <span class="px-3 py-1 rounded-full bg-cyan-400/10 text-cyan-300 text-xs font-bold">${t.tag}</span>
+      <span class="text-xs text-slate-500">Topic ${index+1} of ${topics.length}</span>
+    </div>
+    <div class="answer open prose-cyber">${t.html}</div>
+  `;
+  answerPanel.scrollIntoView({behavior:"smooth",block:"start"});
+}
+
+document.getElementById("checklistGrid").innerHTML = checklist.map((x,i)=>`
+  <label class="flex items-start gap-3 p-4 rounded-xl border border-slate-800 bg-slate-900/50 cursor-pointer hover:border-slate-700">
+    <input type="checkbox" class="mt-1 accent-cyan-400">
+    <span class="text-sm text-slate-300">${x}</span>
+  </label>
+`).join("");
+
+renderTopics();
+openTopic(0);
+</script>
+
+<style>
+.prose-cyber h2{font-size:2rem;line-height:1.2;font-weight:800;color:#fff;margin:0 0 1rem}
+.prose-cyber h3{font-size:1.15rem;font-weight:800;color:#fff;margin:1.7rem 0 .7rem}
+.prose-cyber p{color:#cbd5e1;line-height:1.85;margin:0 0 1rem}
+.prose-cyber ul,.prose-cyber ol{margin:1rem 0 1.3rem 1.3rem;color:#cbd5e1;line-height:1.9}
+.prose-cyber ul{list-style:disc}.prose-cyber ol{list-style:decimal}
+.prose-cyber li{padding-left:.25rem;margin:.25rem 0}
+.prose-cyber strong{color:#fff}
+.callout{margin:1.4rem 0;padding:1rem 1.1rem;border-left:3px solid #22d3ee;background:rgba(8,47,73,.35);border-radius:.75rem;color:#cbd5e1;line-height:1.75}
+.flow{margin:1.2rem 0;padding:1rem;border:1px solid #1e293b;background:#020617;border-radius:.75rem;color:#67e8f9;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;overflow:auto}
+.step{border:1px solid #1e293b;border-radius:.9rem;padding:1rem;background:rgba(15,23,42,.6)}
+.step b{display:block;color:#67e8f9;margin-bottom:.3rem}.step span{color:#94a3b8;font-size:.9rem;line-height:1.6}
+</style>
+</body>
+</html>
