@@ -1282,3 +1282,372 @@ grid-template-columns:1fr;
     margin-bottom:15px;
 
 }
+
+}
+
+/* =========================================================
+   FINAL HOME PAGE SPACING + MOBILE-GUIDE NAVIGATION FIX
+   ========================================================= */
+
+/* Use the same compact/sticky navigation behavior as the
+   Mobile Cybersecurity Guide. */
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #111827;
+    border-bottom: 1px solid rgba(56,189,248,.15);
+    box-shadow: none;
+}
+
+header .container {
+    width: min(1150px, 92%);
+    min-height: 80px;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #e2e8f0;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: color .25s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #38bdf8;
+}
+
+/* Remove the huge 100vh gap on the Home page. */
+.hero {
+    min-height: auto;
+    display: flex;
+    align-items: center;
+    padding: 75px 0 70px;
+}
+
+/* Compact, consistent section rhythm. */
+.about,
+.skills,
+.experience,
+.projects,
+.blog,
+.research {
+    padding: 75px 0;
+}
+
+.section-heading {
+    margin-bottom: 38px;
+}
+
+.section-heading h2 {
+    line-height: 1.2;
+}
+
+.section-heading p {
+    margin-top: 8px;
+}
+
+.about-box {
+    padding: 40px;
+}
+
+.about-box p {
+    margin-bottom: 20px;
+}
+
+.about-grid {
+    margin-top: 28px;
+    gap: 16px;
+}
+
+.about-card {
+    padding: 24px;
+}
+
+.blog-card {
+    margin-top: 0;
+}
+
+/* Tablet */
+@media (max-width: 850px) {
+    header .container {
+        min-height: auto;
+        padding: 18px 0;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 15px 20px;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 55px 0 60px;
+    }
+
+    .hero-content {
+        gap: 28px;
+    }
+
+    .hero-text h1 {
+        font-size: clamp(40px, 7vw, 52px);
+    }
+
+    .hero-image img {
+        width: 280px;
+        height: 280px;
+    }
+
+    .about,
+    .skills,
+    .experience,
+    .projects,
+    .blog,
+    .research {
+        padding: 60px 0;
+    }
+
+    .section-heading {
+        margin-bottom: 30px;
+    }
+
+    .about-box {
+        padding: 32px 26px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 520px) {
+    header .container {
+        padding: 16px 0 18px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    nav ul {
+        gap: 12px 16px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 42px 0 50px;
+    }
+
+    .hero-content {
+        gap: 22px;
+    }
+
+    .hero-text h1 {
+        font-size: 34px;
+        line-height: 1.15;
+    }
+
+    .hero-text h2 {
+        font-size: 19px;
+        margin-bottom: 14px;
+    }
+
+    .hero-text p {
+        line-height: 1.7;
+        margin-bottom: 22px;
+    }
+
+    .hero-image img {
+        width: 190px;
+        height: 190px;
+    }
+
+    .buttons {
+        gap: 12px;
+        margin-bottom: 22px;
+        flex-wrap: wrap;
+    }
+
+    .social {
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about,
+    .skills,
+    .experience,
+    .projects,
+    .blog,
+    .research {
+        padding: 50px 0;
+    }
+
+    .section-heading {
+        margin-bottom: 26px;
+    }
+
+    .section-heading h2 {
+        font-size: clamp(30px, 8vw, 38px);
+    }
+
+    .about-box {
+        padding: 24px 18px;
+    }
+
+    .about-box p {
+        line-height: 1.75;
+        margin-bottom: 18px;
+    }
+
+    .about-grid {
+        margin-top: 24px;
+        gap: 14px;
+        grid-template-columns: 1fr;
+    }
+
+    .about-card {
+        padding: 20px 16px;
+    }
+}
+
+/* =========================================================
+   MOBILE CYBERSECURITY GUIDE NAVBAR — HOME PAGE
+   ========================================================= */
+.site-header {
+    background: #111827;
+    border-bottom: 1px solid rgba(56,189,248,.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.site-header-container {
+    width: min(1150px, 92%);
+    min-height: 80px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.site-logo {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    white-space: nowrap;
+    line-height: 1.15;
+}
+
+.site-logo span {
+    color: #38bdf8;
+}
+
+.site-logo small {
+    display: block;
+    margin-top: 4px;
+    color: #94a3b8;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: .02em;
+}
+
+.site-nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav a {
+    color: #e2e8f0;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: color .25s;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+    color: #38bdf8;
+}
+
+/* Prevent the old header rules from affecting the new navbar */
+.site-header + .hero {
+    padding-top: 75px;
+}
+
+@media (max-width: 850px) {
+    .site-header-container {
+        padding: 18px 0;
+        min-height: auto;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .site-nav ul {
+        justify-content: center;
+        gap: 15px 20px;
+    }
+}
+
+@media (max-width: 520px) {
+    .site-logo {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .site-logo small {
+        font-size: 9px;
+    }
+
+    .site-nav ul {
+        gap: 12px 16px;
+        justify-content: center;
+    }
+
+    .site-nav a {
+        font-size: 13px;
+    }
+
+    .site-header + .hero {
+        padding-top: 45px;
+    }
+}
+
