@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Harish Rajput</title>
+<meta name="description" content="Contact Harish Rajput, System & Network Engineer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#0f172a;--card:#1e293b;--soft:#162338;--white:#f8fafc;--muted:#94a3b8;--cyan:#38bdf8}
+body{min-height:100vh;background:var(--bg);color:var(--white);font-family:Poppins,sans-serif;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+
+.site-header{position:sticky;top:0;z-index:1000;background:rgba(15,23,42,.97);border-bottom:1px solid rgba(56,189,248,.08);backdrop-filter:blur(12px)}
+.site-header-container{max-width:1280px;min-height:86px;margin:auto;padding:16px 28px;display:flex;align-items:center;justify-content:space-between;gap:28px}
+.site-logo{font-size:28px;font-weight:800;line-height:1.1;white-space:nowrap}
+.site-logo span{color:var(--cyan)}
+.site-logo small{display:block;color:var(--muted);font-size:9px;font-weight:500;margin-top:4px}
+.site-nav ul{list-style:none;display:flex;flex-wrap:wrap;justify-content:flex-end;gap:8px 22px}
+.site-nav a{color:#e2e8f0;font-size:15px;font-weight:600;transition:.2s}
+.site-nav a:hover,.site-nav a.active{color:var(--cyan)}
+
+main{max-width:1180px;margin:auto;padding:65px 24px 75px}
+.heading{text-align:center;margin-bottom:42px}
+.heading .eyebrow{color:var(--cyan);font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px}
+.heading h1{font-size:clamp(38px,5vw,58px);line-height:1.15;margin-bottom:12px}
+.heading h1 span{color:var(--cyan)}
+.heading p{max-width:680px;margin:auto;color:var(--muted);font-size:15px;line-height:1.8}
+
+.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:26px}
+.card{background:var(--card);border:1px solid rgba(148,163,184,.13);border-radius:22px;padding:32px;box-shadow:0 18px 45px rgba(0,0,0,.15)}
+.card h2{font-size:24px;margin-bottom:9px}
+.card>p{color:var(--muted);line-height:1.75;margin-bottom:24px}
+.info{display:grid;gap:13px}
+.info-item{display:flex;align-items:center;gap:14px;padding:14px;border-radius:15px;background:var(--soft);border:1px solid rgba(56,189,248,.07)}
+.icon{width:42px;height:42px;flex:0 0 42px;display:grid;place-items:center;border-radius:12px;background:rgba(56,189,248,.1);color:var(--cyan)}
+.info small{display:block;color:var(--muted);font-size:11px}
+.info strong{font-size:13px;overflow-wrap:anywhere}
+.social{display:flex;gap:11px;margin-top:25px}
+.social a,.footer-social a{width:40px;height:40px;display:grid;place-items:center;border-radius:50%;background:var(--soft);border:1px solid rgba(56,189,248,.12);color:var(--muted);transition:.2s}
+.social a:hover,.footer-social a:hover{color:var(--cyan);border-color:var(--cyan);transform:translateY(-2px)}
+
+form{display:grid;gap:15px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+label{display:block;color:#cbd5e1;font-size:12px;font-weight:600;margin-bottom:6px}
+input,textarea{width:100%;border:1px solid rgba(148,163,184,.16);outline:0;border-radius:12px;background:#0f1b2e;color:white;font:14px Poppins;padding:13px 14px}
+input{height:47px} textarea{min-height:145px;resize:vertical}
+input:focus,textarea:focus{border-color:var(--cyan);box-shadow:0 0 0 3px rgba(56,189,248,.08)}
+button{border:0;border-radius:12px;background:var(--cyan);color:#082032;font:700 15px Poppins;padding:14px;cursor:pointer}
+button:hover{filter:brightness(.92)}
+.note{color:#64748b;font-size:11px;line-height:1.5}
+
+.site-footer{background:#0b1324;border-top:1px solid rgba(56,189,248,.08)}
+.footer-container{max-width:1180px;margin:auto;padding:34px 24px 25px;display:grid;grid-template-columns:1.2fr 1fr 1fr auto;align-items:center;gap:25px}
+.footer-logo h3{font-size:21px}.footer-logo span{color:var(--cyan)}
+.footer-logo p,.footer-contact p{color:var(--muted);font-size:12px;margin-top:4px}
+.footer-links{display:flex;flex-wrap:wrap;gap:12px 18px}
+.footer-links a{color:#94a3b8;font-size:13px;font-weight:600}
+.footer-links a:hover{color:var(--cyan)}
+.footer-social{display:flex;gap:9px}
+.footer-bottom{text-align:center;border-top:1px solid rgba(56,189,248,.07);padding:15px;color:#64748b;font-size:12px}
+
+@media(max-width:900px){
+.site-header-container{flex-direction:column;padding:18px;gap:12px}
+.site-nav ul{justify-content:center;gap:9px 18px}
+.site-nav a{font-size:14px}
+main{padding:52px 18px 60px}
+.contact-grid{grid-template-columns:1fr}
+.footer-container{grid-template-columns:1fr;text-align:center;justify-items:center}
+.footer-links,.footer-social{justify-content:center}
+}
+@media(max-width:520px){
+.site-logo{font-size:24px}.site-nav ul{gap:8px 14px}.site-nav a{font-size:13px}
+main{padding:44px 14px 52px}.heading{margin-bottom:30px}
+.heading h1{font-size:35px}.heading p{font-size:14px}
+.card{padding:22px 18px;border-radius:18px}
+.row{grid-template-columns:1fr}
+}
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+<div class="site-header-container">
+<a class="site-logo" href="index.html">Harish<span> Rajput</span><small>System &amp; Network Engineer</small></a>
+<nav class="site-nav" aria-label="Main navigation">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="blog.html">Blog</a></li>
+<li><a href="research.html">Research</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="quotes.html">Quotes</a></li>
+<li><a href="contact.html" class="active">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="heading">
+<p class="eyebrow">Get In Touch</p>
+<h1>Contact <span>Me</span></h1>
+<p>Have a question, idea, collaboration opportunity, or simply want to connect? Send me a message.</p>
+</section>
+
+<section class="contact-grid">
+<div class="card">
+<h2>Let's Connect</h2>
+<p>I’m interested in cybersecurity, networking, technology, technical research, and meaningful ideas.</p>
+
+<div class="info">
+<a class="info-item" href="mailto:me.hcr8953@yahoo.com"><span class="icon"><i class="fa-solid fa-envelope"></i></span><span><small>Email</small><strong>me.hcr8953@yahoo.com</strong></span></a>
+<a class="info-item" href="tel:+918953066404"><span class="icon"><i class="fa-solid fa-phone"></i></span><span><small>Phone</small><strong>+91 8953066404</strong></span></a>
+<div class="info-item"><span class="icon"><i class="fa-solid fa-location-dot"></i></span><span><small>Location</small><strong>India</strong></span></div>
+</div>
+
+<div class="social">
+<a href="https://in.linkedin.com/in/harish-rajput-19a75b21a" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+<a href="https://www.instagram.com/hic.harishrajput/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+<a href="https://www.facebook.com/harishchandrarajpootpersonal/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+</div>
+</div>
+
+<div class="card">
+<h2>Send a Message</h2>
+<p>Fill in the form. Your message will be prepared in WhatsApp.</p>
+<form id="contactForm">
+<div class="row">
+<div><label for="name">Your Name</label><input id="name" type="text" placeholder="Enter your name" required></div>
+<div><label for="email">Your Email</label><input id="email" type="email" placeholder="Enter your email" required></div>
+</div>
+<div><label for="subject">Subject</label><input id="subject" type="text" placeholder="Subject" required></div>
+<div><label for="message">Your Message</label><textarea id="message" placeholder="Write your message here..." required></textarea></div>
+<button type="submit"><i class="fa-brands fa-whatsapp"></i> Send Message</button>
+<p class="note">No third-party form service is used. The message opens in WhatsApp before sending.</p>
+</form>
+</div>
+</section>
+</main>
+
+<footer class="site-footer">
+<div class="footer-container">
+<div class="footer-logo"><h3>Harish <span>Rajput</span></h3><p>System &amp; Network Engineer</p></div>
+<nav class="footer-links" aria-label="Footer navigation">
+<a href="index.html">Home</a><a href="blog.html">Blog</a><a href="research.html">Research</a><a href="contact.html">Contact</a>
+</nav>
+<div class="footer-contact"><p>📧 me.hcr8953@yahoo.com</p><p>📍 India</p></div>
+<div class="footer-social">
+<a href="https://in.linkedin.com/in/harish-rajput-19a75b21a" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+<a href="https://www.instagram.com/hic.harishrajput/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+<a href="https://www.facebook.com/harishchandrarajpootpersonal/" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+</div>
+</div>
+<div class="footer-bottom">© 2026 Harish Rajput • All Rights Reserved</div>
+</footer>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e){
+e.preventDefault();
+const name=document.getElementById("name").value.trim();
+const email=document.getElementById("email").value.trim();
+const subject=document.getElementById("subject").value.trim();
+const message=document.getElementById("message").value.trim();
+const text=`Hello Harish,
+
+Name: ${name}
+Email: ${email}
+Subject: ${subject}
+
+Message:
+${message}
+
+Sent from your website.`;
+window.open("https://wa.me/918953066404?text="+encodeURIComponent(text),"_blank");
+});
+</script>
+
+</body>
+</html>
