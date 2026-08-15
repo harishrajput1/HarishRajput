@@ -171,3 +171,31 @@ blockquote {
     display: block;
 }
 
+/* =========================================
+   QUOTE PAGE — REMOVE TEXT UNDERLINES
+   ========================================= */
+
+.quote-description,
+.quote-description *,
+.quote-description p,
+.quote-description h2,
+.quote-description h3,
+.quote-description strong {
+    text-decoration: none !important;
+    border-bottom: none !important;
+    background-image: none !important;
+    box-shadow: none !important;
+}
+
+/* Keep only the clickable photo as a link */
+.quote-photo a {
+    text-decoration: none !important;
+    border: 0 !important;
+    outline: none !important;
+}
+
+.quote-photo img {
+    display: block;
+    text-decoration: none !important;
+}
+
