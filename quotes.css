@@ -156,7 +156,11 @@ blockquote {
     align-items: center;
     margin: 28px auto 35px;
 }
-
+.quote-photo a {
+    display: block;
+    text-decoration: none !important;
+    border: none !important;
+}
 .quote-photo img {
     width: 160px;
     height: 160px;
@@ -167,16 +171,3 @@ blockquote {
     display: block;
 }
 
-/* Remove unwanted blue/purple underlines from quote page text */
-.quote-description,
-.quote-description p,
-.quote-description h2,
-.quote-description h3,
-.quote-description strong {
-    text-decoration: none !important;
-}
-
-.quote-description a {
-    text-decoration: none !important;
-    color: inherit;
-}
