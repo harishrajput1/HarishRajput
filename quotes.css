@@ -166,3 +166,17 @@ blockquote {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
     display: block;
 }
+
+/* Remove unwanted blue/purple underlines from quote page text */
+.quote-description,
+.quote-description p,
+.quote-description h2,
+.quote-description h3,
+.quote-description strong {
+    text-decoration: none !important;
+}
+
+.quote-description a {
+    text-decoration: none !important;
+    color: inherit;
+}
