@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>20 Essential Linux Commands | Harish Rajput</title>
+<title>100 Essential Linux Commands | Harish Rajput</title>
   <link rel="icon" type="png" href="favicon.png">
 
 <link rel="stylesheet" href="style.css">
@@ -74,70 +74,144 @@ Learning basic Linux commands is the first step toward mastering Linux.
 
 </p>
 
-<h2>Essential Commands</h2>
-
-<ul>
-
-<li><strong>pwd</strong> – Show the current working directory.</li>
-
+<h2>Essential Linux Commands</h2><ul><li><strong>pwd</strong> – Show the current working directory.</li>
 <li><strong>ls</strong> – List files and directories.</li>
-
+<li><strong>ls -l</strong> – Display files with detailed information.</li>
+<li><strong>ls -la</strong> – List all files, including hidden files.</li>
 <li><strong>cd</strong> – Change the current directory.</li>
-
+<li><strong>cd ..</strong> – Move to the parent directory.</li>
+<li><strong>cd ~</strong> – Move to the home directory.</li>
 <li><strong>mkdir</strong> – Create a new directory.</li>
-
+<li><strong>mkdir -p</strong> – Create nested directories.</li>
 <li><strong>rmdir</strong> – Remove an empty directory.</li>
-
 <li><strong>touch</strong> – Create an empty file.</li>
-
-<li><strong>cp</strong> – Copy files and directories.</li>
-
+<li><strong>cp</strong> – Copy files or directories.</li>
+<li><strong>cp -r</strong> – Copy directories recursively.</li>
 <li><strong>mv</strong> – Move or rename files.</li>
-
-<li><strong>rm</strong> – Delete files or directories.</li>
-
-<li><strong>cat</strong> – Display file contents.</li>
-
-<li><strong>less</strong> – Read large files page by page.</li>
-
-<li><strong>head</strong> – Show the beginning of a file.</li>
-
-<li><strong>tail</strong> – Show the end of a file.</li>
-
-<li><strong>grep</strong> – Search text in files.</li>
-
+<li><strong>rm</strong> – Delete files.</li>
+<li><strong>rm -r</strong> – Remove directories recursively.</li>
+<li><strong>file</strong> – Identify the type of a file.</li>
+<li><strong>stat</strong> – Display detailed file information.</li>
 <li><strong>find</strong> – Locate files and directories.</li>
-
+<li><strong>locate</strong> – Quickly search for files.</li><li><strong>cat</strong> – Display file contents.</li>
+<li><strong>less</strong> – Read large files page by page.</li>
+<li><strong>more</strong> – Display file contents page by page.</li>
+<li><strong>head</strong> – Show the beginning of a file.</li>
+<li><strong>tail</strong> – Show the end of a file.</li>
+<li><strong>tail -f</strong> – Monitor a file as it changes.</li>
+<li><strong>grep</strong> – Search for text in files.</li>
+<li><strong>grep -r</strong> – Search text recursively.</li>
+<li><strong>sort</strong> – Sort lines of text.</li>
+<li><strong>uniq</strong> – Remove consecutive duplicate lines.</li>
+<li><strong>wc</strong> – Count lines, words, and characters.</li>
+<li><strong>cut</strong> – Extract sections from lines.</li>
+<li><strong>tr</strong> – Translate or replace characters.</li>
+<li><strong>sed</strong> – Search and modify text streams.</li>
+<li><strong>awk</strong> – Process and analyze text.</li>
+<li><strong>diff</strong> – Compare two files.</li>
+<li><strong>tee</strong> – Write output to a file and terminal.</li>
+<li><strong>echo</strong> – Display text or variables.</li>
+<li><strong>nano</strong> – Edit text files in the terminal.</li>
+<li><strong>vim</strong> – Advanced terminal text editor.</li><li><strong>whoami</strong> – Show the current username.</li>
+<li><strong>id</strong> – Display user and group information.</li>
+<li><strong>who</strong> – Show currently logged-in users.</li>
+<li><strong>w</strong> – Show logged-in users and their activity.</li>
+<li><strong>passwd</strong> – Change a user's password.</li>
+<li><strong>su</strong> – Switch to another user.</li>
+<li><strong>sudo</strong> – Execute commands with elevated privileges.</li>
 <li><strong>chmod</strong> – Change file permissions.</li>
-
 <li><strong>chown</strong> – Change file ownership.</li>
-
-<li><strong>df -h</strong> – Show disk usage.</li>
-
-<li><strong>free -h</strong> – Show memory usage.</li>
-
-<li><strong>top</strong> – Monitor running processes.</li>
-
-</ul>
-
-<h2>Example</h2>
-
-<pre><code>
+<li><strong>chgrp</strong> – Change the group ownership of a file.</li><li><strong>df -h</strong> – Show disk usage in human-readable format.</li>
+<li><strong>du -sh</strong> – Show the size of a directory.</li>
+<li><strong>lsblk</strong> – List block storage devices.</li>
+<li><strong>mount</strong> – Mount a filesystem.</li>
+<li><strong>umount</strong> – Unmount a filesystem.</li>
+<li><strong>fdisk</strong> – Manage disk partitions.</li>
+<li><strong>blkid</strong> – Display block device information.</li>
+<li><strong>sync</strong> – Flush filesystem buffers.</li>
+<li><strong>dd</strong> – Copy and convert raw data.</li>
+<li><strong>du</strong> – Estimate file and directory space usage.</li><li><strong>ps</strong> – Display running processes.</li>
+<li><strong>ps aux</strong> – Display detailed process information.</li>
+<li><strong>top</strong> – Monitor running processes in real time.</li>
+<li><strong>htop</strong> – Interactive process monitor.</li>
+<li><strong>kill</strong> – Terminate a process by its PID.</li>
+<li><strong>killall</strong> – Terminate processes by name.</li>
+<li><strong>pkill</strong> – Terminate processes using a pattern.</li>
+<li><strong>jobs</strong> – Display active shell jobs.</li>
+<li><strong>bg</strong> – Resume a stopped job in the background.</li>
+<li><strong>fg</strong> – Bring a background job to the foreground.</li><li><strong>free -h</strong> – Show memory usage.</li>
+<li><strong>uptime</strong> – Show system uptime and load.</li>
+<li><strong>uname -a</strong> – Display system and kernel information.</li>
+<li><strong>hostname</strong> – Display the system hostname.</li>
+<li><strong>date</strong> – Display the current date and time.</li>
+<li><strong>dmesg</strong> – Display kernel messages.</li>
+<li><strong>systemctl</strong> – Manage system services.</li>
+<li><strong>journalctl</strong> – View system logs.</li>
+<li><strong>reboot</strong> – Restart the system.</li>
+<li><strong>shutdown</strong> – Shut down the system.</li><li><strong>ip</strong> – Display and manage network configuration.</li>
+<li><strong>ping</strong> – Test network connectivity.</li>
+<li><strong>curl</strong> – Transfer data from or to a URL.</li>
+<li><strong>wget</strong> – Download files from the internet.</li>
+<li><strong>ssh</strong> – Connect securely to a remote system.</li>
+<li><strong>scp</strong> – Securely copy files between systems.</li>
+<li><strong>sftp</strong> – Transfer files securely using SSH.</li>
+<li><strong>ss</strong> – Display network connections and sockets.</li>
+<li><strong>dig</strong> – Query DNS information.</li>
+<li><strong>nslookup</strong> – Look up DNS information.</li><li><strong>apt</strong> – Manage packages on Debian-based systems.</li>
+<li><strong>apt update</strong> – Update package information.</li>
+<li><strong>apt upgrade</strong> – Upgrade installed packages.</li>
+<li><strong>dnf</strong> – Manage packages on Fedora-based systems.</li>
+<li><strong>pacman</strong> – Manage packages on Arch Linux.</li>
+<li><strong>tar</strong> – Create or extract archive files.</li>
+<li><strong>gzip</strong> – Compress files.</li>
+<li><strong>gunzip</strong> – Decompress gzip files.</li>
+<li><strong>zip</strong> – Create ZIP archives.</li>
+<li><strong>unzip</strong> – Extract ZIP archives.</li><li><strong>history</strong> – Display previously executed commands.</li>
+<li><strong>man</strong> – Display the manual for a command.</li>
+<li><strong>clear</strong> – Clear the terminal screen.</li>
+<li><strong>alias</strong> – Create shortcuts for commands.</li>
+<li><strong>env</strong> – Display environment variables.</li>
+<li><strong>export</strong> – Set environment variables.</li>
+<li><strong>which</strong> – Show the location of a command.</li>
+<li><strong>whereis</strong> – Locate binary, source, and manual files.</li>
+<li><strong>help</strong> – Display help for shell built-in commands.</li>
+<li><strong>exit</strong> – Exit the current shell session.</li></ul><h2>Examples</h2><pre><code>
 mkdir MyProject
 cd MyProject
 touch index.html
 ls
 pwd
-</code></pre>
-
-<h2>Conclusion</h2>
-
-<p>
-
-These commands form the foundation of Linux administration. Practice them
-daily until they become second nature. As you grow, you'll be able to
-manage servers, troubleshoot systems, and automate tasks more efficiently.
-
+</code></pre><h2>Basic File Management Example</h2><pre><code>
+mkdir LinuxProject
+cd LinuxProject
+touch file.txt
+echo "Hello Linux" &gt; file.txt
+cat file.txt
+cp file.txt backup.txt
+mv backup.txt backup-file.txt
+ls -l
+</code></pre><h2>Searching and Filtering Example</h2><pre><code>
+grep "Linux" file.txt
+find . -name "*.txt"
+cat file.txt | grep "Linux"
+</code></pre><h2>System Information Example</h2><pre><code>
+whoami
+uname -a
+hostname
+uptime
+free -h
+df -h
+</code></pre><h2>Conclusion</h2><p>
+These 100 Linux commands form a strong foundation for Linux administration,
+development, system troubleshooting, networking, and server management.
+Practice them regularly and use <strong>man command</strong> to learn more
+about any command and its available options.
+</p><p>
+<strong>Safety note:</strong> Be careful with commands such as
+<strong>rm -r</strong>, <strong>dd</strong>, <strong>fdisk</strong>,
+<strong>chmod</strong>, <strong>chown</strong>, and system shutdown or
+reboot commands. Incorrect usage can result in data loss or system
+unavailability.
 </p>
 
 </div>
